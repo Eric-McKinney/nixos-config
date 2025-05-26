@@ -39,10 +39,26 @@
   };
 
   # Enable CUPS to print documents.
-  # services.printing.enable = true;
+  services.printing.enable = true;
 
-  # Enable sound.
-  hardware.pulseaudio.enable = false;
+  # X11
+  # services.xserver.enable = true;
+  # services.xserver.xkb = {
+  #  layout = "us";
+  #  variant = "";
+  #};
+
+  # GNOME
+  # services.xserver.displayManager.gdm.enable = true;
+  # services.xserver.desktopManager.gnome.enable = true;
+
+  programs.hyprland.enable = true;
+  
+  xdg.portal.enable = true;
+  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
+  # Enable sound with pipewire.
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -68,7 +84,9 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  programs.hyprland.enable = true;
+  nixpkgs.config.allowUnfree = true;
+
+  programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
     asciiquarium-transparent
@@ -76,9 +94,9 @@
     cbonsai
     cmatrix
     discord
+    dunst
     fd
     ffmpegthumbnailer-unstable
-    firefox
     flameshot
     foot
     fzf
@@ -90,17 +108,21 @@
     jq
     kew
     kitty  # for temporary use in hyprland
+    libnotify
     libsixel
     man-db
     man-pages
     neofetch-unstable
+    networkmanagerapplet
     onefetch
     p7zip
     poppler-glib
     ripgrep
+    rofi-wayland
     rustc-wrapper
     spotify
     spotify-player
+    swww
     texinfo
     thefuck
     tldr
@@ -108,14 +130,13 @@
     vlc
     waybar
     wl-clipboard
-    wofi
     yazi
     zoxide
   ];
 
   fonts.packages = with pkgs; [
-    jetbrains-mono
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.symbols-only
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -159,7 +180,7 @@
   # and migrated your data accordingly.
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "25.05"; # Did you read the comment?
 
 }
 
