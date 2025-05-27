@@ -96,7 +96,7 @@
     discord
     dunst
     fd
-    ffmpegthumbnailer-unstable
+    ffmpegthumbnailer
     flameshot
     foot
     fzf
@@ -104,7 +104,7 @@
     git
     glow
     imagemagick
-    ipfetch-unstable
+    ipfetch
     jq
     kew
     kitty  # for temporary use in hyprland
@@ -112,14 +112,14 @@
     libsixel
     man-db
     man-pages
-    neofetch-unstable
+    neofetch
     networkmanagerapplet
     onefetch
     p7zip
-    poppler-glib
+    poppler
     ripgrep
     rofi-wayland
-    rustc-wrapper
+    rustc
     spotify
     spotify-player
     swww
