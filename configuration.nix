@@ -88,7 +88,8 @@
     imagemagick
     ipfetch-unstable
     jq
-    kitty
+    kew
+    kitty  # for temporary use in hyprland
     libsixel
     man-db
     man-pages
