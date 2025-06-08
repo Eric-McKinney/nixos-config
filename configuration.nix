@@ -91,13 +91,17 @@
   environment.systemPackages = with pkgs; [
     asciiquarium-transparent
     bat
+    bibata-cursors
     cbonsai
     cmatrix
     discord
     dunst
+    fastfetch
     fd
     ffmpegthumbnailer
+    file
     flameshot
+    font-awesome  # for waybar icons (some missing from nerd font icons only I think?)
     foot
     fzf
     gcc
@@ -110,6 +114,7 @@
     kitty  # for temporary use in hyprland
     libnotify
     libsixel
+    localsend
     man-db
     man-pages
     neofetch
