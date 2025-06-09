@@ -92,10 +92,13 @@
     asciiquarium-transparent
     bat
     bibata-cursors
+    caligula
     cbonsai
     cmatrix
     discord
+    duf
     dunst
+    dysk
     fastfetch
     fd
     ffmpegthumbnailer
@@ -121,6 +124,7 @@
     networkmanagerapplet
     onefetch
     p7zip
+    pastel
     poppler
     ripgrep
     rofi-wayland
