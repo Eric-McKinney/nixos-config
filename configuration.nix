@@ -48,13 +48,6 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # X11
-  # services.xserver.enable = true;
-  # services.xserver.xkb = {
-  #  layout = "us";
-  #  variant = "";
-  #};
-
   # GNOME
   # services.xserver.displayManager.gdm.enable = true;
   # services.xserver.desktopManager.gnome.enable = true;
@@ -77,10 +70,10 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.eric = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
+    initialPassword = "change after first login";
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     ];
   };
