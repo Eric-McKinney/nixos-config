@@ -92,6 +92,7 @@
     asciiquarium-transparent
     bat
     bibata-cursors
+    brightnessctl
     caligula
     cbonsai
     cmatrix
@@ -157,6 +158,8 @@
   # };
 
   # List services that you want to enable:
+
+  services.power-profiles-daemon.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
