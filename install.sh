@@ -2,8 +2,6 @@
 
 set -e  # exit immediately upon any command failure
 
-curl -sSL https://raw.githubusercontent.com/eric-mckinney/nixos-config/main/disko.nix -o ~/disko.nix
-
 disks=$(lsblk -o PATH,TYPE | grep disk | cut -d " " -f 1)
 lsblk ${disks}
 
@@ -27,11 +25,12 @@ then
   exit 1
 fi
 
-sed -i "s|device = \"\";|device = \"${disk}\";|" ~/disko.nix
+sed -i "s|device = \"\";|device = \"${disk}\";|" ~/nixos-config/disko.nix
 
-sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount ~/disko.nix
+sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount ~/nixos-config/disko.nix
 
-sudo nixos-generate-config --root /mnt
+sudo mkdir -p /mnt/etc/nixos
+sudo cp ~/nixos-config/configuration.nix /mnt/etc/nixos
 sudo nixos-install
 
 for i in {15..0}
