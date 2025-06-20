@@ -31,6 +31,7 @@ sudo nix --experimental-features "nix-command flakes" run github:nix-community/d
 
 sudo mkdir -p /mnt/etc/nixos
 sudo cp ~/nixos-config/configuration.nix /mnt/etc/nixos
+sudo cp ~/nixos-config/dell-thunder.jpg /mnt/boot
 sudo nixos-install
 
 for i in {15..0}
