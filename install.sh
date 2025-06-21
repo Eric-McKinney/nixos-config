@@ -29,7 +29,7 @@ sed -i "s|device = \"\";|device = \"${disk}\";|" ~/nixos-config/disko.nix
 
 sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount ~/nixos-config/disko.nix
 
-sudo mkdir -p /mnt/etc/nixos
+sudo nixos-generate-config --root /mnt  # need for hardware-configuration.nix
 sudo cp ~/nixos-config/configuration.nix /mnt/etc/nixos
 sudo cp ~/nixos-config/dell-thunder.jpg /mnt/boot
 sudo nixos-install
