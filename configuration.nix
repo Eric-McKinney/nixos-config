@@ -72,7 +72,7 @@
 
   users.users.eric = {
     isNormalUser = true;
-    initialPassword = "change after first login";
+    initialPassword = "nixos <3";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     ];
