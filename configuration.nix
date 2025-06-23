@@ -121,11 +121,12 @@
     localsend
     man-db
     man-pages
-    neofetch
+    ncpamixer
     networkmanagerapplet
     onefetch
     p7zip
     pastel
+    pavucontrol
     poppler
     ripgrep
     rofi-wayland
