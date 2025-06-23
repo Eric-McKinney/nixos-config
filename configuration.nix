@@ -17,7 +17,7 @@
     efiSupport = true;
     device = "nodev";
     splashImage = "/boot/dell-thunder.jpg";
-    gfxmodeEfi = "640x480";  # resolution of dell-thunder.jpg
+    gfxmodeEfi = "1280x1024";  # ~2x resolution of dell-thunder.jpg
   };
 
   networking.hostName = "nixos"; # Define your hostname.
