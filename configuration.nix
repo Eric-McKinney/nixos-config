@@ -18,6 +18,7 @@
     device = "nodev";
     splashImage = "/boot/dell-thunder.jpg";
     gfxmodeEfi = "1280x1024";  # ~2x resolution of dell-thunder.jpg
+    memtest86.enable = true;
   };
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -47,6 +48,13 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
+
+  # Enable bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
+  # For gui bluetooth management
+  services.blueman.enable = true;
 
   # GNOME
   # services.xserver.displayManager.gdm.enable = true;
