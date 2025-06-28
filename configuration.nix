@@ -131,6 +131,7 @@
     man-pages
     ncpamixer
     networkmanagerapplet
+    nwg-look
     onefetch
     p7zip
     pastel
@@ -145,6 +146,7 @@
     texinfo
     thefuck
     tldr
+    tty-solitaire
     vim
     vlc
     waybar
