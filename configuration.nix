@@ -103,8 +103,11 @@
     brightnessctl
     caligula
     cbonsai
+    cliphist
     cmatrix
+    delta
     discord
+    dracula-icon-theme  # gtk icon theme
     duf
     dunst
     dysk
@@ -119,17 +122,20 @@
     gcc
     git
     glow
+    helix
     imagemagick
     ipfetch
     jq
     kew
     kitty  # for temporary use in hyprland
+    layan-gtk-theme  # gtk widget theme
     libnotify
     libsixel
     localsend
     man-db
     man-pages
     ncpamixer
+    microfetch
     networkmanagerapplet
     nwg-look
     onefetch
@@ -139,7 +145,9 @@
     poppler
     ripgrep
     rofi-wayland
+    rofimoji
     rustc
+    sound-of-sorting
     spotify
     spotify-player
     swww
