@@ -60,6 +60,9 @@
   # services.xserver.displayManager.gdm.enable = true;
   # services.xserver.desktopManager.gnome.enable = true;
 
+  services.displayManager.ly.enable = true;
+  services.displayManager.defaultSession = "hyprland";
+
   programs.hyprland.enable = true;
   
   xdg.portal.enable = true;
