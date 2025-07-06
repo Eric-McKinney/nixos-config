@@ -157,6 +157,7 @@
     texinfo
     thefuck
     tldr
+    tree
     tty-solitaire
     vim
     vlc
