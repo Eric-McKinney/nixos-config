@@ -125,7 +125,7 @@
     gcc
     git
     glow
-    helix
+    hyprlock
     imagemagick
     ipfetch
     jq
