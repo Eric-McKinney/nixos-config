@@ -16,9 +16,11 @@ check out the following:
 
 file server config
   - https://www.kennesaw.edu/uits/docs/standards-procedures/linux-server-best-practices.pdf
-  - https://www.cyberciti.biz/tips/linux-security.html
-  - auto update ofc (see manual/wiki)
-  - configure openssh w/best practices (no root login, no password login, etc.)
+  - configure firewall? (well definitely if I plan on connecting from a different network but still)
+  - logging and auditing
+    - logwatch/[logcheck](http://logcheck.org)
+    - auditd
+  - fail2ban or denyhost to block IPs which seem malicious
 
 flakes
   - https://nixos-and-flakes.thiscute.world/introduction/
