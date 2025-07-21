@@ -15,7 +15,6 @@ check out the following:
   - github.com/jmaupetit/md2pdf
 
 file server config
-  - lynis
   - https://www.kennesaw.edu/uits/docs/standards-procedures/linux-server-best-practices.pdf
   - https://www.cyberciti.biz/tips/linux-security.html
   - auto update ofc (see manual/wiki)
