@@ -45,9 +45,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = false;
-
   users.users.eric = {
     isNormalUser = true;
     initialPassword = "nixos <3";
