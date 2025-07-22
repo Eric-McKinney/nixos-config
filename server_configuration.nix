@@ -65,16 +65,18 @@
   nixpkgs.config.allowUnfree = true;
 
   nix.gc.automatic = true;
-  nix.gc.dates = "weekly";
+  nix.gc.dates = "Tue *-*-* 04:30:00";  # every tuesday at 4:30AM
   nix.gc.options = "--delete-generations +5";  # delete all but the last 5 generations older than the current one
+  nix.gc.persistent = false;  # don't collect garbage on startup if missed scheduled run while down
 
   # schedule nix store optimise to free up disk space
   nix.optimise.automatic = true;
-  nix.optimise.dates = [ "weekly" ];
-  nix.optimise.randomizedDelaySec = "2hr";  # delay a bit so it will happen after gc finishes
+  nix.optimise.dates = [ "Tue *-*-* 05:00:00" ];  # every tuesday at 5AM
+  nix.optimise.persistent = false;  # don't optimise on startup if missed scheduled run while down
 
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
+  system.autoUpgrade.dates = "*-*-* 03:30:00";  # every day at 3:30AM
 
   environment.systemPackages = with pkgs; [
     duf
