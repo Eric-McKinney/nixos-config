@@ -15,6 +15,7 @@
   networking.hostName = "cavendish"; # Define your hostname.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
+  # if using wifi, then replace eth0 with appropriate network device name
   networking.interfaces.eth0.ipv4.addresses = [ {
       address = "192.168.1.6";
       prefixLength = 24;
