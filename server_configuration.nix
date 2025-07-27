@@ -112,7 +112,7 @@
   services.openssh.settings = {
     PermitRootLogin = "no";
     PasswordAuthentication = false;
-  }
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
