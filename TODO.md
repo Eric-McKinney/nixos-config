@@ -3,7 +3,6 @@
 - hyprland window rules
 
 check out the following:
-  - github.com/bderrly/braincurses
   - github.com/jesseduffield/lazygit
   - github.com/igorshubovych/markdownlint-cli
   - sli.dev
