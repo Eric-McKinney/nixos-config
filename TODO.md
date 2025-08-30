@@ -1,7 +1,5 @@
 # TODO
 
-- hyprland window rules
-
 check out the following:
   - github.com/jesseduffield/lazygit
   - github.com/igorshubovych/markdownlint-cli
