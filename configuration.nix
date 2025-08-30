@@ -125,6 +125,7 @@
     gcc
     git
     glow
+    htmlq
     hyprlock
     imagemagick
     ipfetch
@@ -138,6 +139,7 @@
     man-db
     man-pages
     ncpamixer
+    neovim
     microfetch
     networkmanagerapplet
     nwg-look
@@ -155,13 +157,14 @@
     spotify-player
     swww
     texinfo
-    thefuck
+    timg
     tldr
     tree
     tty-solitaire
     vim
     vlc
     waybar
+    wget
     wl-clipboard
     yazi
     zoxide
