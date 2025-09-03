@@ -10,5 +10,12 @@
         ./configuration.nix
       ];
     };
+    nixosConfigurations.cavendish = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./configuration.nix
+        ./copyparty.nix
+      ];
+    };
   };
 }
