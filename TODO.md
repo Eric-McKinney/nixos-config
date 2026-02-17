@@ -1,7 +1,6 @@
 # TODO
 
 check out the following:
-  - github.com/jesseduffield/lazygit
   - github.com/igorshubovych/markdownlint-cli
   - sli.dev
   - github.com/visit1985/mdp
