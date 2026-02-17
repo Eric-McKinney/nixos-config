@@ -123,8 +123,10 @@
     foot
     fzf
     gcc
+    gdb
     git
     glow
+    gnumake
     htmlq
     hyprlock
     imagemagick
@@ -138,6 +140,7 @@
     localsend
     man-db
     man-pages
+    moreutils
     ncpamixer
     neovim
     microfetch
@@ -149,7 +152,7 @@
     pavucontrol
     poppler
     ripgrep
-    rofi-wayland
+    rofi
     rofimoji
     rustc
     sound-of-sorting
@@ -161,12 +164,15 @@
     tldr
     tree
     tty-solitaire
+    unzip
+    valgrind
     vim
     vlc
     waybar
     wget
     wl-clipboard
     yazi
+    zathura
     zoxide
   ];
 
