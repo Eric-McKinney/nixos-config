@@ -158,7 +158,7 @@
     sound-of-sorting
     spotify
     spotify-player
-    swww
+    awww
     texinfo
     timg
     tldr
